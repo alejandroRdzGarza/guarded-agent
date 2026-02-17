@@ -62,10 +62,10 @@ const FeaturesSection = () => {
         >
           <span className="text-xs font-mono text-primary tracking-widest mb-4 block">CAPABILITIES</span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            Enterprise-grade guardrails
+            Enterprise-grade governance
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Everything you need to deploy AI agents with confidence.
+            Everything security, compliance, and platform teams need to say yes to AI agents in production.
           </p>
         </motion.div>
 

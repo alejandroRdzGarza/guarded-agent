@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Shield } from "lucide-react";
+import { ArrowRight, Shield, Building2, FileCheck } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -22,7 +22,7 @@ const HeroSection = () => {
           >
             <span className="h-2 w-2 rounded-full bg-primary animate-pulse-glow" />
             <span className="text-xs font-mono text-muted-foreground tracking-wide">
-              GOVERNANCE MIDDLEWARE FOR AI AGENTS
+              GOVERNANCE INFRASTRUCTURE FOR AI AGENTS
             </span>
           </motion.div>
 
@@ -33,9 +33,9 @@ const HeroSection = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6"
           >
-            <span className="text-foreground">Confidence in</span>
+            <span className="text-foreground">The control plane for</span>
             <br />
-            <span className="text-gradient glow-text">AI-driven decisions.</span>
+            <span className="text-gradient glow-text">AI agent governance.</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -45,7 +45,7 @@ const HeroSection = () => {
             transition={{ delay: 0.45, duration: 0.6 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Determinism, auditability, and policy enforcement for enterprise AI agent systems — without accessing your data.
+            One policy engine. One audit log. All agents. Centralized governance that your security and compliance teams will actually approve.
           </motion.p>
 
           {/* CTA */}
@@ -59,18 +59,18 @@ const HeroSection = () => {
               href="#demo"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
             >
-              Request a Demo
+              Talk to Sales
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="#features"
+              href="#platform"
               className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
             >
-              Explore Features
+              See the Platform
             </a>
           </motion.div>
 
-          {/* Trust signals */}
+          {/* Trust signals — buyer-facing */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -79,9 +79,9 @@ const HeroSection = () => {
           >
             <span className="flex items-center gap-2"><Shield className="h-3.5 w-3.5" />ZERO DATA ACCESS</span>
             <span>|</span>
-            <span>VENDOR AGNOSTIC</span>
+            <span className="flex items-center gap-2"><Building2 className="h-3.5 w-3.5" />VENDOR AGNOSTIC</span>
             <span>|</span>
-            <span>SOC 2 READY</span>
+            <span className="flex items-center gap-2"><FileCheck className="h-3.5 w-3.5" />SOC 2 READY</span>
           </motion.div>
         </div>
       </div>

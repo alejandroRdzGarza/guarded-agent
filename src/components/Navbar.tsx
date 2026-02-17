@@ -19,10 +19,11 @@ const Navbar = () => {
         </a>
 
         <div className="hidden md:flex items-center gap-8">
+          <a href="#platform" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Platform</a>
           <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
           <a href="#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">How it Works</a>
           <a href="#use-cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Use Cases</a>
-          <a href="#demo" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">Request Demo</a>
+          <a href="#demo" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">Talk to Sales</a>
         </div>
 
         <button
@@ -40,10 +41,11 @@ const Navbar = () => {
           className="md:hidden border-t border-border bg-card/90 backdrop-blur-xl"
         >
           <div className="flex flex-col gap-4 px-6 py-6">
+            <a href="#platform" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Platform</a>
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
             <a href="#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">How it Works</a>
             <a href="#use-cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Use Cases</a>
-            <a href="#demo" className="text-sm font-medium text-primary">Request Demo</a>
+            <a href="#demo" className="text-sm font-medium text-primary">Talk to Sales</a>
           </div>
         </motion.div>
       )}
