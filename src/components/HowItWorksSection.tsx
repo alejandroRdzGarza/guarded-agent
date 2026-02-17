@@ -3,27 +3,27 @@ import { motion } from "framer-motion";
 const steps = [
   {
     num: "01",
-    title: "Install the SDK",
-    description: "Add our lightweight Python SDK to your agent codebase. One line import.",
-    code: `pip install agentguard`,
+    title: "Platform Team Defines Policies",
+    description: "Security and compliance teams set governance rules in the control plane. No developer bottleneck.",
+    code: `policy_id: restrict_prod_writes\napplies_to:\n  action.type: "write"\n  environment: "production"\ndecision: REQUIRE_APPROVAL`,
   },
   {
     num: "02",
-    title: "Wrap Your Agent",
-    description: "Intercept decision boundaries with a simple decorator. Works with any framework.",
+    title: "Developers Integrate in Minutes",
+    description: "A lightweight SDK wraps agent decision boundaries. Two lines of code, any framework.",
     code: `from agentguard import guard\n\n@guard(policy="prod-safety")\ndef my_agent(task):\n    return agent.run(task)`,
   },
   {
     num: "03",
-    title: "Define Policies",
-    description: "Set rules in simple YAML. Allow, deny, throttle, or require approval for any action.",
-    code: `policy_id: restrict_writes\napplies_to:\n  action.type: "write"\n  environment: "production"\ndecision: REQUIRE_APPROVAL`,
+    title: "Agents Governed in Real Time",
+    description: "Every action is evaluated against policy before execution. Violations are blocked, not just logged.",
+    code: `# Real-time enforcement:\n# → query_customer_db     ALLOW\n# → write_financial_data  BLOCKED\n# → send_external_email   REQUIRE_APPROVAL`,
   },
   {
     num: "04",
-    title: "Monitor & Audit",
-    description: "Every decision logged. Every action traceable. Your compliance team can finally say yes.",
-    code: `# Dashboard shows:\n# ✓ 2,847 actions evaluated\n# ✓ 23 violations blocked\n# ✓ 100% audit coverage`,
+    title: "Compliance Gets Proof",
+    description: "Immutable audit trails, exportable reports, deterministic replays. Your auditors get answers in minutes.",
+    code: `# Compliance dashboard:\n# ✓ 12,847 actions governed\n# ✓ 23 policy violations prevented\n# ✓ 100% audit coverage\n# ✓ SOC 2 report exported`,
   },
 ];
 
@@ -37,12 +37,12 @@ const HowItWorksSection = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <span className="text-xs font-mono text-primary tracking-widest mb-4 block">INTEGRATION</span>
+          <span className="text-xs font-mono text-primary tracking-widest mb-4 block">HOW IT WORKS</span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            Up and running in minutes
+            Policy to production in minutes
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Four steps from zero to governed agent execution.
+            Security defines the rules. Developers integrate. Compliance gets proof.
           </p>
         </motion.div>
 

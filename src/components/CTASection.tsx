@@ -17,18 +17,23 @@ const CTASection = () => {
 
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Ready to govern your agents?
+              Your agents are already running.
+              <br />
+              <span className="text-gradient">Who's governing them?</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-lg mx-auto">
-              See a live demo of policy enforcement, deterministic replay, and full audit trails — in 15 minutes.
+              See centralized policy enforcement, deterministic replay, and compliance-ready audit trails — in a 15-minute walkthrough with our team.
             </p>
             <a
               href="mailto:hello@agentguard.dev"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
             >
-              Request a Demo
+              Talk to Sales
               <ArrowRight className="h-4 w-4" />
             </a>
+            <p className="mt-6 text-xs text-muted-foreground/50 font-mono">
+              FOR PLATFORM LEADS · SECURITY TEAMS · COMPLIANCE OFFICERS
+            </p>
           </div>
         </motion.div>
       </div>
